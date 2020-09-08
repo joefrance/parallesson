@@ -15,3 +15,7 @@ First steps
   - PWA
   - PostgreSQL?/MongoDB
 - PDF reader/"stitcher"
+
+Dictionary for "parts of speech" and definitions
+https://github.com/meetDeveloper/googleDictionaryAPI
+- Find "language codes".
