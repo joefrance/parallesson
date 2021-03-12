@@ -10,6 +10,7 @@ The online site will be available as an SPA mutli-device solution and limited in
 See the EPUB format. Possibly produce output in this format.
 
 - [EPUB Wikipedia](https://en.wikipedia.org/wiki/EPUB#:~:text=EPUB%20is%20an%20e%2Dbook,smartphones%2C%20tablets%2C%20and%20computers.)
+- [Creating ePub Files with Node.js](https://thecodebarbarian.com/creating-epub-files-with-node-js.html)
 - [How to Turn a Microsoft Word Document Into an Ebook (EPUB)](https://www.janefriedman.com/word-epub/)
 - [tutorial to create e-book read application - epub file formate [duplicate]](https://stackoverflow.com/questions/3193294/tutorial-to-create-e-book-read-application-epub-file-formate)
 
