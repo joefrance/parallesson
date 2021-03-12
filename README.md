@@ -4,6 +4,9 @@ This project will develop and online and offline model to facilitate reading and
 
 The online site will be available as an SPA mutli-device solution and limited in some functionality. The offline model will either be implemented as an Electron app. This will allow for the end-user to purchase Google Translation credits to use in the advanced features of the app.
 
+- [Create Electron App](https://www.leveluptutorials.com/tutorials/level-1-electron)
+  - [Part 1](https://www.youtube.com/watch?v=GwxSkNkP67o)
+
 See the EPUB format. Possibly produce output in this format.
 
 - [EPUB Wikipedia](https://en.wikipedia.org/wiki/EPUB#:~:text=EPUB%20is%20an%20e%2Dbook,smartphones%2C%20tablets%2C%20and%20computers.)
