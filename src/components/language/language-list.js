@@ -11,10 +11,8 @@ const styleListInput = {
 
 class LanguageList extends Component {
    state = {
-      listItems: 'John, Paul, Ringo, George',
-      listIndices: [],
-      n: 2,
-      combinatoricItems: [],
+      baseUrl: 'https://m.egwwritings.org',
+      lslBookEntries: [],
       languageData: myData
    }
 
@@ -28,9 +26,43 @@ class LanguageList extends Component {
         return str.slice(str.length-chr,str.length);
     }
 
+    findBookEntries(_this, node, level) {
+
+      _this = _this;
+
+        var folders = 
+              (node.folders === null
+              || node.folders === undefined) ?
+                []
+                :
+                node.folders;
+        var bookEntries = [];
+        folders.forEach(folder => {
+
+          folder.bookEntries.forEach(bookEntry => {
+            bookEntries.push({
+              level: level,
+              folders: folders,
+              bookEntry: bookEntry
+            });
+          });
+
+          var subBookEntries = _this.findBookEntries(_this, folder, level + 1);
+          bookEntries.push(...subBookEntries);
+          
+        });
+
+        return bookEntries;
+    }
+
     onChange = (source, lang) => {
-        console.log(`onChange: ${source} => ${lang}`);
+        console.log(`onChange: ${source} => ${lang.languageName} ${lang.folders.length}`);
         //this.setState({ state: this.state });
+        if(source === 'LSL') {
+          this.state.lslBookEntries = this.findBookEntries(this, lang, 0);
+        }
+        console.log(this.state.lslBookEntries);
+        this.setState({ state: this.state });
     }
 
     onChangeInput = e => this.setState({[e.target.name]: e.target.value});
@@ -40,13 +72,35 @@ class LanguageList extends Component {
         if (this.state.languageData) {
           return this.state.languageData.map((item, index) => 
              (
-                <Dropdown.Item key={index} onClick={() => this.onChange(source, item.lang)} eventKey={index}>{item.languageName}</Dropdown.Item>
+                <Dropdown.Item key={index} onClick={() => this.onChange(source, item)} eventKey={index}>{item.languageName}</Dropdown.Item>
              )
           );
         }
     
         return null;
     }
+
+    getBookEntryTableRow(bookEntries) {
+
+      if (bookEntries) {
+        return bookEntries.map((book, index) => 
+           (
+            <tr key={index}>
+              <td>
+                <a target="_blank" href={this.state.baseUrl + book.bookEntry.href}>
+                <img src={book.bookEntry.img.src} /><br />
+                {book.bookEntry.bookInfo.bookId}
+                </a>
+              </td>
+              <td>{book.bookEntry.title}<br />by <b>{book.bookEntry.bookInfo.author}</b></td>
+              <td>{book.bookEntry.bookInfo.pages}</td>
+            </tr>
+           )
+        );
+      }
+  
+      return null;
+  }
 
    render() {
       return (
@@ -76,6 +130,27 @@ class LanguageList extends Component {
 
 
             </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <table width="100%" border="1" className="table table-striped table-bordered">
+                    <tbody>
+                        {/* <tr>
+                        <td>
+                            <Link to="/weld-unit-edit">Add New Weld Unit</Link>
+                        </td>
+                        </tr> */}
+                        <tr>
+                        <td>#</td>
+                        <td>Title</td>
+                        <td>Pages</td>
+                        </tr>
+                        {this.getBookEntryTableRow(this.state.lslBookEntries)}
+                    </tbody>
+                </table>
+              </div>
+            </div>
+
 
         </div>
       )
