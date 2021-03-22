@@ -7,6 +7,10 @@ The online site will be available as an SPA mutli-device solution and limited in
 - [Create Electron App](https://www.leveluptutorials.com/tutorials/level-1-electron)
   - [Part 1](https://www.youtube.com/watch?v=GwxSkNkP67o)
 
+Create Parallel Audiobooks indexed to the text
+
+- [Step-By-Step: How to Create an Audiobook From MP3 Files](https://naturallyvoice.com/step-by-step-how-to-create-an-audiobook-from-mp3-files/)
+
 See the EPUB format. Possibly produce output in this format.
 
 - [EPUB Wikipedia](https://en.wikipedia.org/wiki/EPUB#:~:text=EPUB%20is%20an%20e%2Dbook,smartphones%2C%20tablets%2C%20and%20computers.)

@@ -1,0 +1,50 @@
+{
+    "bookInfo": {
+        "isbn": "",
+        "bookGuid": "",
+        "author": [],
+        "publicationDate": "",
+        "publisher": "",
+        "xrefs": []
+    },
+    "toc": {},
+    "chapters": [
+        {
+            "title": "Chapter 1",
+            "lang": "en",
+            "xrefs": [],
+            "pages": [
+                {
+                    "lang": "en",
+                    "xrefs": [],
+                    "header": {
+                        "paragraphs": {}
+                    },
+                    "body": {
+                        "paragraphs": [
+                            {
+                                "lang": "en",
+                                "xrefs": [],
+                                "sentences": [
+                                    {
+                                        "wordPhraseTokens": [
+                                            {
+                                                "content": "Joe was here",
+                                                "type": "phrase",
+                                                "lang": "en",
+                                                "xrefs": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "paragraphs": {}
+                    }
+                }
+            ]
+        }
+    ]
+}
