@@ -8,8 +8,8 @@ function App() {
         <p>
           parallesson<br />The Parrallel language reader.
         </p>
-        <LanguageList />
       </header>
+      <LanguageList />
     </div>
   );
 }
