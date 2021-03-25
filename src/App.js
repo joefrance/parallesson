@@ -1,5 +1,8 @@
 import './App.css';
-import LanguageList from './components/language/language-list';
+import P9NLanguageList from './components/p9n/p9n-language-list';
+import P9NBook from './components/p9n/p9n-book';
+import P9NBookThumbnail from './components/p9n/p9n-book-thumbnail';
+import LanguageHelpGrammar from './components/language/language-help-grammar';
 
 function App() {
   return (
@@ -9,7 +12,10 @@ function App() {
           parallesson<br />The Parrallel language reader.
         </p>
       </header>
-      <LanguageList />
+      <P9NBookThumbnail />
+      <P9NBook />
+      <P9NLanguageList />
+      <LanguageHelpGrammar />
     </div>
   );
 }

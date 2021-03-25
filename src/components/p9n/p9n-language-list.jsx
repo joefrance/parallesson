@@ -9,7 +9,7 @@ const styleListInput = {
   width: '500px'
 };
 
-class LanguageList extends Component {
+class P9NLanguageList extends Component {
    state = {
       baseUrl: 'https://m.egwwritings.org',
       lslBookEntries: [],
@@ -226,8 +226,8 @@ class LanguageList extends Component {
    }
 }
 
-LanguageList.prototypes = {
+P9NLanguageList.prototypes = {
     handleAction: PropTypes.func.isRequired
 };
 
-export default LanguageList
+export default P9NLanguageList

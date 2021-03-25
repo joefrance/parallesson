@@ -35,3 +35,19 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  text-align:right;
+}
+  h1, h2 {
+  margin:0 1em 0 0;
+}
+section {
+  width:80%;
+  margin:auto;
+  column-count:2;
+ }
+a {
+  text-decoration:none;
+  color:black;
+}
