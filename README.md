@@ -7,6 +7,19 @@ The online site will be available as an SPA mutli-device solution and limited in
 - [Create Electron App](https://www.leveluptutorials.com/tutorials/level-1-electron)
   - [Part 1](https://www.youtube.com/watch?v=GwxSkNkP67o)
 
+Idea, use text-to-speech to read text alternately from one language to the next.
+
+- [English Audio Speech-to-Text Transcript with Hugging Face | Python NLP](https://www.youtube.com/watch?v=dJAoK5zK36M)
+
+### NLP
+
+- [Multilingual BERT - Part 1 - Intro and Concepts](https://www.youtube.com/watch?v=rpuAZ8Ja0KE)
+- [MBart](https://www.youtube.com/watch?v=oO7k5lH8Oe8)
+- [Hugging Face](https://github.com/huggingface)
+- [node-nlp](https://www.npmjs.com/package/node-nlp)
+- [Language translation with HuggingFace](https://www.youtube.com/watch?v=fxZtz0LPJLE)
+- [Question Answering for Node.js](https://github.com/huggingface/node-question-answering)
+
 Create Parallel Audiobooks indexed to the text
 
 - [Step-By-Step: How to Create an Audiobook From MP3 Files](https://naturallyvoice.com/step-by-step-how-to-create-an-audiobook-from-mp3-files/)
