@@ -4,8 +4,23 @@ This project will develop and online and offline model to facilitate reading and
 
 The online site will be available as an SPA mutli-device solution and limited in some functionality. The offline model will either be implemented as an Electron app. This will allow for the end-user to purchase Google Translation credits to use in the advanced features of the app.
 
+### Access various "book" listings
+
+- Sabbath School Lessons
+  - [Sabbath School API v1](https://adventech-sabbath-school.api-docs.io/v1/getting-started/introduction)
+  - [Sabbath School Lessons](https://sabbath-school.adventech.io/language/)
+    - [adventech github repo](https://github.com/Adventech)
+    - [How to Contribute Sabbath School Lessons to Adventech
+](https://medium.com/@imasaru/how-to-contribute-sabbath-school-lessons-to-adventech-6818aaca56c7)
+- [E.G. White Estate Books](https://m.egwwritings.org/languages)
+- gutenberg
+  - [gutenberg-http A simple API for books](https://justamouse.com/gutenberg-http/)
+  - [Gutenberg](https://github.com/c-w/gutenberg/)
+  - [Gutenberg-HTTP](https://github.com/c-w/gutenberg-http/)
+
 - [Create Electron App](https://www.leveluptutorials.com/tutorials/level-1-electron)
   - [Part 1](https://www.youtube.com/watch?v=GwxSkNkP67o)
+
 
 Idea, use text-to-speech to read text alternately from one language to the next.
 

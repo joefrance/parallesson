@@ -24,7 +24,7 @@ class P9NBookIndex extends Component {
          <div>
             <h5>Index</h5>
               <section>
-                <h7>A</h7> 
+                <h6>A</h6> 
                 <dl>
                 <dt>accordion,layouts</dt>
                   <dd><a href="">about 128</a></dd>
